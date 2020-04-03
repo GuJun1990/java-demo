@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+option java_outer_classname = "QiwenSchema";
+
+message QiwenSchemaInfo {
+    optional int64 id = 1;
+    optional int64 timestamp = 2;
+
+    optional int32 field_int32 = 3;
+    optional float field_float = 4;
+    optional double field_double = 5;
+
+    repeated int64 long_array = 6;
+
+    repeated string string_array = 10;
+}
+
